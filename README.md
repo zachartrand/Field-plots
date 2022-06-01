@@ -1,7 +1,7 @@
 # Field Plots
 
 <img src="earth_gravity/svg/earth_gravity_dynamic_plasma.svg"
-  alt="Earth Gravity Dynamic Viridis" width=49%>
+  alt="Earth Gravity Dynamic Plasma" width=49%>
 <img src="earth_gravity/svg/earth_orbit_velocity_dynamic_viridis.svg"
   alt="Earth Orbital Velocity Dynamic Viridis" width=49%>
 

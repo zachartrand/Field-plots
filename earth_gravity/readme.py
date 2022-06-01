@@ -4,22 +4,20 @@ readme_text_list = []
 readme_text_list.append("# Vector plots of Earth's gravity\n")
 
 cmaps = ["viridis", "inferno", "plasma", "cividis"]
-for cmap in cmaps:
-    tags = (f"""## {cmap.title()}\n"""
-            "\n"
-            f"""<img src="svg/earth_gravity_{cmap}.svg"\n"""
-            f"""  alt="Earth Gravity {cmap.title()}" width=100%>\n"""
-            "\n"
-            f"""<img src="svg/divergence_of_earth_gravity_{cmap}.svg"\n"""
-            f"""  alt="Divergence of Earth Gravity {cmap.title()}" width=100%>\n"""
-            "\n"
-            f"""<img src="svg/earth_orbit_velocity_{cmap}.svg"\n"""
-            f"""  alt="Earth Orbital Velocity {cmap.title()}" width=100%>\n"""
-            "\n"
-            f"""<img src="svg/curl_of_earth_orbit_velocity_{cmap}.svg"\n"""
-            f"""  alt="Curl of Earth Orbital Velocity {cmap.title()}" width=100%>\n""")
+plots = [("earth_gravity", "Earth Gravity"),
+         ("divergence_of_earth_gravity", "Divergence of Earth Gravity"),
+         ("earth_orbit_velocity", "Earth Orbital Velocity"),
+         ("curl_of_earth_orbit_velocity", "Curl of Earth Orbital Velocity")]
 
-    readme_text_list.append(tags)
+for cmap in cmaps:
+    readme_text_list.append(f"## {cmap.title()}\n")
+    for plot in plots:
+        tags = (
+            f"""<img src="svg/{plot[0]}_{cmap}.svg"\n"""
+            f"""  alt="{plot[1]} {cmap.title()}" width=80%>\n"""
+        )
+
+        readme_text_list.append(tags)
 
 readme_text = "\n".join(readme_text_list)
 

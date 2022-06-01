@@ -4,10 +4,15 @@ readme_text_list = []
 readme_text_list.append("# Vector plots of Earth's gravity\n")
 
 cmaps = ["viridis", "inferno", "plasma", "cividis"]
-plots = [("earth_gravity", "Earth Gravity"),
-         ("divergence_of_earth_gravity", "Divergence of Earth Gravity"),
-         ("earth_orbit_velocity", "Earth Orbital Velocity"),
-         ("curl_of_earth_orbit_velocity", "Curl of Earth Orbital Velocity")]
+plots = [
+    ("earth_gravity", "Earth Gravity"),
+    ("earth_gravity_dynamic", "Earth Gravity Dynamic"),
+    ("divergence_of_earth_gravity", "Divergence of Earth Gravity"),
+    ("earth_orbit_velocity", "Earth Orbital Velocity"),
+    ("earth_orbit_velocity_dynamic", "Earth Orbital Velocity Dynamic"),
+    ("curl_of_earth_orbit_velocity", "Curl of Earth Orbital Velocity"),
+    ("curl_of_earth_orbit_velocity_dynamic", "Curl of Earth Orbital Velocity Dynamic"),
+]
 
 for cmap in cmaps:
     readme_text_list.append(f"## {cmap.title()}\n")

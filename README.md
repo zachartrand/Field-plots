@@ -6,7 +6,7 @@
   alt="Earth Orbital Velocity Dynamic Viridis" width=49%>
 
 <img src="slope_fields/svg/log_x_slope_field_viridis.svg"
-  alt="Slope Equals y Viridis" width=49%>
+  alt="Slope Equals Exp of Negative y" width=49%>
   <img src="slope_fields/svg/gaussian_slope_field_viridis.svg"
     alt="Slope Equals Negative Two x y Viridis" width=49%>
 

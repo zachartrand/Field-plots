@@ -29,7 +29,7 @@ for cmap in cmaps:
     for plot in plots:
         tag = (
             f"""<img src="svg/{plot[0]}_slope_field_{cmap}.svg"\n"""
-            f"""  alt="{plot[1]} {cmap.title()}" width=24%>"""
+            f"""  alt="{plot[1]} {cmap.title()}" width=49%>"""
         )
         readme_text_list.append(tag)
         
